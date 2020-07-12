@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Compilador C++</title>
+    <link rel="stylesheet" href="./public/css/bootstrap.css">
+    <link rel="stylesheet" href="./public/css/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <button class="btn-loadfile" type="button" id="btn-loadfile">Seleccionar Archivo</button>
+            <input type="file" id="file-chooser" style="display:none;" />
+            <input type="file" id="folder-chooser" webkitdirectory style="display:none;" />
+            <button class="btn-savefile" id="btn-savefile">Guardar Cambios</button>
+        </ul>
+    </nav>
+    <div class="row">
+        <div class="col-nolinea">
+            <ul class="nolinea">
+                <li>1</li>
+            </ul>
+        </div>
+        <div class="content-area">
+            <textarea class="file-content"></textarea>
+        </div>
+        <div class="col">
+            <div class="lexico">
+                <button class="btn-lexico">Lexico</button>
+                <table class="tabla-lexico">
+                    <tr>
+                        <th>Token</th>
+                        <th>Lexema</th>
+                        <th>Linea</th>
+                        <th>Tipo de Token</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="Sintactico">
+                <button class="btn-sintactico">Sintactico</button>
+                <table>
+                    <tr>
+                        <th>Simbolo</th>
+                        <th>Tipo</th>
+                        <th>Linea</th>
+                        <th>Numero de Token</th>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="errores">
+
+            <button class="btn-errores">Errores</button>
+            <table class="tabla-errores">
+                <tr>
+                    <th>Codigo</th>
+                    <th>Mensaje</th>
+                    <th>Tipo</th>
+                    <th>Linea</th>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+
+    <script src="./public/js/main.js"></script>
+</body>
+
+</html>
