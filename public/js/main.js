@@ -1515,6 +1515,8 @@ class Sintactico{
                 alert("Analisis Sintactico no se recupero, paro fulminante")
         }
     }
+    
+    
 }
 
 
